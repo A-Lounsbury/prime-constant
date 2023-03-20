@@ -26,5 +26,4 @@ for x in sequence:
     total += x
 
 average = total / len(sequence)
-
 print("average:", average)
