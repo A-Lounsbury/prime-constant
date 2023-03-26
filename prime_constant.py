@@ -44,12 +44,7 @@ for i, s in enumerate(sequence):
 print(len(average_sequence))
 
 average_df = pd.DataFrame(average_sequence, columns=["Average"])
-
-indices = []
-for i in range(len(average_sequence)):
-    indices.append(i)
-average_df['index'] = indices
-
+average_df['index'] = [i for i in range(len(average_sequence))]
 sns.scatterplot(x="index", y="Average", data=average_df)
 plt.show()
 
@@ -65,12 +60,7 @@ for i, s in enumerate(sequence):
 print(len(average_sequence))
 
 average_df = pd.DataFrame(average_sequence, columns=["Average"])
-
-indices = []
-for i in range(len(average_sequence)):
-    indices.append(i)
-average_df['index'] = indices
-
+average_df['index'] = [i for i in range(len(average_sequence))]
 sns.scatterplot(x="index", y="Average", data=average_df)
 plt.show()
 
@@ -86,12 +76,7 @@ for i, s in enumerate(sequence):
 print(len(average_sequence))
 
 average_df = pd.DataFrame(average_sequence, columns=["Average"])
-
-indices = []
-for i in range(len(average_sequence)):
-    indices.append(i)
-average_df['index'] = indices
-
+average_df['index'] = [i for i in range(len(average_sequence))]
 sns.scatterplot(x="index", y="Average", data=average_df)
 plt.show()
 
@@ -107,12 +92,7 @@ for i, s in enumerate(sequence):
 print(len(average_sequence))
 
 average_df = pd.DataFrame(average_sequence, columns=["Average"])
-
-indices = []
-for i in range(len(average_sequence)):
-    indices.append(i)
-average_df['index'] = indices
-
+average_df['index'] = [i for i in range(len(average_sequence))]
 sns.scatterplot(x="index", y="Average", data=average_df)
 plt.show()
 
@@ -128,11 +108,6 @@ for i, s in enumerate(sequence):
 print(len(average_sequence))
 
 average_df = pd.DataFrame(average_sequence, columns=["Average"])
-
-indices = []
-for i in range(len(average_sequence)):
-    indices.append(i)
-average_df['index'] = indices
-
+average_df['index'] = [i for i in range(len(average_sequence))]
 sns.scatterplot(x="index", y="Average", data=average_df)
 plt.show()
