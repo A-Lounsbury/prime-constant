@@ -28,8 +28,7 @@ def generate(n):
                     break
     return sequence
 
-sequence = generate(20)
-print(sequence)
+print(generate(100))
 
 # Plots of Averages
 n = 10
@@ -46,6 +45,7 @@ print(len(average_sequence))
 average_df = pd.DataFrame(average_sequence, columns=["Average"])
 average_df['index'] = [i for i in range(len(average_sequence))]
 sns.scatterplot(x="index", y="Average", data=average_df)
+plt.savefig("images/averages_10.png")
 plt.show()
 
 n = 100
@@ -62,6 +62,7 @@ print(len(average_sequence))
 average_df = pd.DataFrame(average_sequence, columns=["Average"])
 average_df['index'] = [i for i in range(len(average_sequence))]
 sns.scatterplot(x="index", y="Average", data=average_df)
+plt.savefig("images/averages_100.png")
 plt.show()
 
 n = 1000
@@ -78,6 +79,7 @@ print(len(average_sequence))
 average_df = pd.DataFrame(average_sequence, columns=["Average"])
 average_df['index'] = [i for i in range(len(average_sequence))]
 sns.scatterplot(x="index", y="Average", data=average_df)
+plt.savefig("images/averages_1000.png")
 plt.show()
 
 n = 10000
@@ -89,11 +91,11 @@ for i, s in enumerate(sequence):
     total += s
     average = total / (i + 1)
     average_sequence.append(average)
-print(len(average_sequence))
 
 average_df = pd.DataFrame(average_sequence, columns=["Average"])
 average_df['index'] = [i for i in range(len(average_sequence))]
 sns.scatterplot(x="index", y="Average", data=average_df)
+plt.savefig("images/averages_10000.png")
 plt.show()
 
 n = 100000
@@ -105,9 +107,9 @@ for i, s in enumerate(sequence):
     total += s
     average = total / (i + 1)
     average_sequence.append(average)
-print(len(average_sequence))
 
 average_df = pd.DataFrame(average_sequence, columns=["Average"])
 average_df['index'] = [i for i in range(len(average_sequence))]
 sns.scatterplot(x="index", y="Average", data=average_df)
+plt.savefig("images/averages_100000.png")
 plt.show()
